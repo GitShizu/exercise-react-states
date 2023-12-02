@@ -9,10 +9,12 @@ img {
   max-width: 100%;
 }
 
-.light{
-  background-color: white;
+.light, .light *{
+  background-color: rgb(235, 235, 235);
+  color: rgb(50, 50, 50);
 }
 
-.dark{
-  background-color: rgb(75, 75, 75);
+.dark, .dark *{
+  background-color: rgb(50, 50, 50);
+  color: rgb(220, 220, 220);
 }

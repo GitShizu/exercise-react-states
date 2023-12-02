@@ -1,9 +1,14 @@
 import './Main.css'
 
-export default ()=>{
+
+export default ({islightModeOn})=>{
+    
     return(
         <main>
-            <h1>This is the main section</h1>
+            <h1>Home page</h1>
         </main>
     )
 }
+
+
+
