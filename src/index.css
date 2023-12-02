@@ -8,9 +8,12 @@
 img {
   max-width: 100%;
 }
+button {
+  border: 1px solid grey;
+}
 
 .light, .light *{
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(220, 220, 220);
   color: rgb(50, 50, 50);
 }
 

@@ -1,0 +1,14 @@
+#slider-container {
+    border: 1px solid grey;
+}
+
+#slider-container div:first-child {
+    font-size: 4rem;
+}
+
+#slider-container>div {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
