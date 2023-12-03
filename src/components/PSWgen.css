@@ -1,18 +1,27 @@
 #psw-gen{
     height: 100vh;
     display: grid;
-    place-content: center;
-    gap: 2rem;
+    place-content: start;
+    justify-content: center;
+    gap: 2.5rem;
     text-align: center;
+    padding-top: 6rem;
 }
-#psw-gen div{
+#psw-gen form{
     width: 100%;
     display: flex;
     justify-content: center;    
+    gap: 2rem;
+}
+#psw-gen label{
+    display: flex;
+    gap: 1rem;
 }
 #output{
     font-size: 3rem;
     font-weight: 600;
-    background-color: rgba(54, 99, 102, 0.75);
-    height: 10vh;
+}
+#psw-gen button {
+    width: 10rem;
+    justify-self: center;
 }

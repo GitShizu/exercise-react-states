@@ -20,8 +20,8 @@
     justify-content: center;
     gap: 1rem;
     padding: 2rem 2rem;
-    width: 75vw;
-    background-color: rgba(54, 99, 102, 0.75);
+    width: 95vw;
+    background-color: rgba(81, 168, 194, 60%);
 }
 
 #slider-container button{
@@ -29,5 +29,5 @@
     padding: 0.4rem 0.4rem 0;
     border-radius: 50%;
     position: relative;
-    left: 1.85rem
+    left: 1.85rem;
 }

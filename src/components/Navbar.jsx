@@ -23,7 +23,7 @@ export default ({ navLinksData, logoUrl, logoAlt, islightModeOn, handleColorMode
             <figure>
                 <img src={logoUrl} alt={logoAlt} />
             </figure>
-            <section id='dashboard'>
+            <section id='links-container'>
                 <Links linksDataArray={navLinksData} />
             </section>
             <div id='switch'>

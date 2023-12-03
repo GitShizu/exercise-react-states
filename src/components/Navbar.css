@@ -20,7 +20,7 @@
     height: 40px;
 }
 
-#dashboard{
+#links-container{
     display: flex;
     gap: 3rem;
     font-weight: 600;
