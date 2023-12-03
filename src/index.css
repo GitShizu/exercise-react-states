@@ -8,17 +8,21 @@
 img {
   max-width: 100%;
 }
-button {
-  border: 1px solid grey;
+button, input[type='number'] {
+  border: 1px solid rgb(80, 80, 80);
   font-size: inherit;
+  text-align: center;
+}
+button {
+  cursor:pointer
 }
 
-.light, .light>* {
+.light, .light>*, input[type='number']{
   background-color: rgb(220, 220, 220);
   color: rgb(50, 50, 50);
 }
 
-.dark, .dark>* {
+.dark, .dark>*{
   background-color: rgb(50, 50, 50);
   color: rgb(220, 220, 220);
 }

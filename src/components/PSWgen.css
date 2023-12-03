@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    text-align: center;
     gap: 2.5rem;
     padding-top: 6rem;
 }
@@ -20,11 +21,14 @@
     display: flex;
     gap: 1rem;
 }
+#psw-gen input[type='number']{
+    width: 2.5em;
+}
 #psw-gen button {
     width: 10rem;
     justify-self: center;
     font-size: 1.5rem;
-    background-color: rgb(7, 179, 136);
+    background-color: rgb(224, 152, 17);
 }
 .output-container{
     visibility: hidden;
@@ -39,6 +43,6 @@
     padding: 1rem 1rem 2rem;
 }
 .show-output span{
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     font-weight: 600;
 }

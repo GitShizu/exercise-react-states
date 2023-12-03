@@ -27,10 +27,10 @@ export default ({ navLinksData, logoUrl, logoAlt, islightModeOn, handleColorMode
                 <Links linksDataArray={navLinksData} />
             </section>
             <div id='switch'>
-            <p>Toggle {islightModeOn?'dark':'light'} mode</p>
-            <button className={islightModeOn ? 'light' : 'dark'} onClick={handleColorMode}>{colorModeicon}</button>
+                <p onClick={handleColorMode}>Toggle {islightModeOn ? 'dark' : 'light'} mode</p>
+                <button className={islightModeOn ? 'light' : 'dark'} onClick={handleColorMode}>{colorModeicon}</button>
             </div>
-            
+
         </menu>
     )
 }
