@@ -1,11 +1,12 @@
 import './Main.css'
 
 
-export default ({islightModeOn})=>{
+export default ({logoUrl, logoAlt})=>{
     
     return(
-        <main>
-            <h1>Home page</h1>
+        <main id='home'>
+            <h1>Home</h1>
+            <figure><img src={logoUrl} alt={logoAlt} /></figure>
         </main>
     )
 }

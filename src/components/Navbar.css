@@ -3,6 +3,10 @@
     grid-template-columns: 20vw 1fr 20vw;
     align-items: center;
     padding: 0.25rem 1.5rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid grey;
 }
 
 #navbar *{
