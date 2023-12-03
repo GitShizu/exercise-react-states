@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
-import Main from './components/Main'
+import Home from './components/Home'
 import { IoHome } from "react-icons/io5";
 import { IoMusicalNotes } from "react-icons/io5";
 import { RiLockPasswordFill } from "react-icons/ri";
@@ -30,7 +30,7 @@ function App() {
         ]}
         logoUrl={'https://cdn1.iconfinder.com/data/icons/education-set-3-3/74/15-512.png'}
         logoAlt={'React Logo'} />
-      <Main 
+      <Home 
       logoUrl={'./src/assets/react logo.png'}
       logoAlt={'React Logo'} />
       <Slider />

@@ -5,7 +5,7 @@
 }
 
 #slider-container div:first-child {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 #slider-container input{
@@ -20,7 +20,7 @@
     justify-content: center;
     gap: 1rem;
     padding: 2rem 2rem;
-    width: 95vw;
+    width: 85vw;
     background-color: rgba(81, 168, 194, 60%);
 }
 

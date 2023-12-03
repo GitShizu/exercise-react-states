@@ -1,9 +1,10 @@
 main {
-    height: 100vh;
+    height: calc(100vh - 50px);
     display: grid;
     place-content: center;
     text-align: center;
     gap: 3rem;
     font-size: 2rem;
+    padding-top: 5rem;
 }
 

@@ -5,18 +5,7 @@ import './Slider.css'
 
 export default () => {
     const [volume, setVolume] = useState(100);
-    const muteUnmute = (currentVolume) => {
-        
-        if (currentVolume > 0) {
-            setVolume(0)
-        } else {
-            setVolume(currentVolume)
-        }
-    }
-    const handleMute = () => {
-        muteUnmute(volume)
-    }
-
+    const handleMute = () => volume>0?setVolume(0):setVolume(50);
 
     return (
         <section id="slider-container">
@@ -32,3 +21,5 @@ export default () => {
             </div>
         </section>)
 }
+// [isMuted, setIsMuted] = useState(true)
+// () => setOpen((previsMuted) => !isMuted)

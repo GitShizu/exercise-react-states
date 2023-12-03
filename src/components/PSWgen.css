@@ -1,10 +1,10 @@
 #psw-gen{
     height: 100vh;
-    display: grid;
-    place-content: start;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     gap: 2.5rem;
-    text-align: center;
     padding-top: 6rem;
 }
 #psw-gen form{
@@ -12,16 +12,33 @@
     display: flex;
     justify-content: center;    
     gap: 2rem;
+    background-color: rgba(81, 168, 194, 60%);
+    padding: 2rem 1rem;
+    width: 85vw;
 }
 #psw-gen label{
     display: flex;
     gap: 1rem;
 }
-#output{
-    font-size: 3rem;
-    font-weight: 600;
-}
 #psw-gen button {
     width: 10rem;
     justify-self: center;
+    font-size: 1.5rem;
+    background-color: rgb(7, 179, 136);
+}
+.output-container{
+    visibility: hidden;
+}
+.show-output{
+    visibility: visible;
+    display: grid;
+    text-align: center;
+    gap: 2rem;
+    width: 85vw;
+    background-color: rgba(81, 168, 194, 60%);
+    padding: 1rem 1rem 2rem;
+}
+.show-output span{
+    font-size: 2.75rem;
+    font-weight: 600;
 }

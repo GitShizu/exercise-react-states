@@ -1,4 +1,4 @@
-import './Main.css'
+import './Home.css'
 
 
 export default ({logoUrl, logoAlt})=>{
