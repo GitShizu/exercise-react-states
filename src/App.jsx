@@ -6,6 +6,7 @@ import { IoHome } from "react-icons/io5";
 import { IoMusicalNotes } from "react-icons/io5";
 import { RiLockPasswordFill } from "react-icons/ri";
 import Slider from './components/Slider';
+import PSWgen from './components/PSWgen';
 
 
 
@@ -25,7 +26,7 @@ function App() {
         navLinksData={[
           { url: '#home', text: 'Home', icon: <IoHome /> },
           { url: '#slider-container', text: 'Player', icon: <IoMusicalNotes /> },
-          { url: '/PSW_generator', text: 'PSW generator', icon: <RiLockPasswordFill /> }
+          { url: '#psw-gen', text: 'PSW generator', icon: <RiLockPasswordFill /> }
         ]}
         logoUrl={'https://cdn1.iconfinder.com/data/icons/education-set-3-3/74/15-512.png'}
         logoAlt={'React Logo'} />
@@ -33,6 +34,7 @@ function App() {
       logoUrl={'./src/assets/react logo.png'}
       logoAlt={'React Logo'} />
       <Slider />
+      <PSWgen/>
     </section>
   )
 }

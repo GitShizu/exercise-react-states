@@ -12,7 +12,7 @@
 #navbar *{
     text-decoration: none;
     list-style: none;
-    
+    color: inherit;
 }
 
 #navbar figure {
@@ -37,4 +37,7 @@
     padding: 0.4rem 0.4rem 0.15rem;
     border-radius: 50%;
     font-size: 1.25rem;
+}
+#switch p{
+    text-align: end;
 }

@@ -10,14 +10,15 @@ img {
 }
 button {
   border: 1px solid grey;
+  font-size: inherit;
 }
 
-.light, .light *{
+.light, .light>* {
   background-color: rgb(220, 220, 220);
   color: rgb(50, 50, 50);
 }
 
-.dark, .dark *{
+.dark, .dark>* {
   background-color: rgb(50, 50, 50);
   color: rgb(220, 220, 220);
 }

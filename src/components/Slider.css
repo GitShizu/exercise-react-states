@@ -19,9 +19,9 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    background-color: rgba(54, 99, 102, 0.5);
     padding: 2rem 2rem;
     width: 75vw;
+    background-color: rgba(54, 99, 102, 0.75);
 }
 
 #slider-container button{
