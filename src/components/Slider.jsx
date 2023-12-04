@@ -5,21 +5,26 @@ import './Slider.css'
 
 export default () => {
     const [volume, setVolume] = useState(100);
-    const handleMute = () => volume>0?setVolume(0):setVolume(50);
+    const handleMute = () => !isMuted ? setIsMuted(true) : setIsMuted(false);
+    const [isMuted, setIsMuted] = useState(false);
 
     return (
         <section id="slider-container">
-            <div>{volume}</div>
+            <div>{isMuted ? 0 : volume}</div>
             <div>
-                <input onChange={e => setVolume(e.target.value)}
+                <input onChange={(e) => {
+                    if(isMuted){
+                        setIsMuted(false);
+                        setVolume(0)
+                    }else{
+                        setVolume(e.target.value)}}
+                    }
                     type="range"
                     name="volume-slider"
                     min="0" max="100"
-                    value={volume}
+                    value={isMuted ? 0 : volume}
                 />
-                <button onClick={handleMute}>{volume > 0 ? <GoUnmute /> : <GoMute />}</button>
+                <button onClick={handleMute}>{!isMuted ? <GoUnmute /> : <GoMute />}</button>
             </div>
         </section>)
 }
-// [isMuted, setIsMuted] = useState(true)
-// () => setOpen((previsMuted) => !isMuted)
