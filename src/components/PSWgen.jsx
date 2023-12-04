@@ -11,7 +11,7 @@ export default () => {
 
     const handleLength = e => setPasswordLength(e.target.valueAsNumber);
     const handleClick = () => {
-        let characters = '0123456789!@#$%^&*()'
+        let characters = ''
         if (addUpperCase) { characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' }
         if (addLowerCase) { characters += 'abcdefghijklmnopqrstuvwxyz' }
         if (addSymbols) { characters += '0123456789!@#$%^&*()' }
