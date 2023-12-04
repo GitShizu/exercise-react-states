@@ -11,8 +11,10 @@ export default () => {
 
     const handleLength = e => setPasswordLength(e.target.valueAsNumber);
     const handleClick = () => {
-        let characters = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()'
+        let characters = '0123456789!@#$%^&*()'
         if (addUpperCase) { characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' }
+        if (addLowerCase) { characters += 'abcdefghijklmnopqrstuvwxyz' }
+        if (addSymbols) { characters += '0123456789!@#$%^&*()' }
         let randomPassword = '';
         for (let i = 0; i < passwordLength; i++) {
             const randomIndex = Math.floor(Math.random() * (characters.length - 1) + 1)
